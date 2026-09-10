@@ -1,0 +1,23 @@
+name: pill-detection
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch=2.4.1
+  - torchvision=0.19.1
+  - torchaudio=2.4.1
+  - pip=24.2
+  - pip:
+      - opencv-python==4.10.0.84
+      - numpy==1.26.4
+      - pandas==2.2.2
+      - matplotlib==3.9.2
+      - pyyaml==6.0.2
+      - tqdm==4.66.5
+      - scikit-learn==1.5.2
+      - albumentations==1.4.15
+      - pycocotools==2.0.8
+      - ultralytics==8.3.0 # YOLO 계열 선택 시 사용. torchvision만 쓰기로 하면 제거해도 됨
+      - kagglehub==0.3.4 # data/README.md 참고 — Kaggle 대회 데이터 다운로드용

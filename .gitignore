@@ -1,0 +1,37 @@
+# Data & outputs (large / generated, not tracked)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+outputs/*
+!outputs/checkpoints
+!outputs/checkpoints/.gitkeep
+!outputs/predictions
+!outputs/predictions/.gitkeep
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+
+# Experiment tracking
+wandb/
+runs/
+lightning_logs/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+
+# Conda / venv
+.conda/
+venv/
+.venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
